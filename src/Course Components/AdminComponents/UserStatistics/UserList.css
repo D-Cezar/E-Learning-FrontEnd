@@ -1,0 +1,119 @@
+/* UserList.css */
+
+.user-list {
+    margin-top: 20px;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.user-list h3 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.user-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.user-list li {
+    display: grid;
+    grid-template-columns: 1fr 2fr auto; /* Define column sizes */
+    gap: 15px; /* Space between columns */
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-list li:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-list .user-name {
+    font-weight: bold;
+    color: #333;
+}
+
+.user-list .user-email {
+    color: #555; /* Add color for email */
+}
+
+.user-list button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    justify-self: end; /* Align button to the end of its grid cell */
+}
+
+.user-list button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.user-details {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-details h4 {
+    margin-top: 0;
+    color: #333;
+}
+
+.user-details p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.user-details button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #d9534f;
+    color: white;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.user-details button:hover {
+    background-color: #c9302c;
+    transform: scale(1.05);
+}
+
+.user-details h5 {
+    margin-top: 20px;
+    color: #333;
+}
+
+.user-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.user-details ul li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.user-details ul li:last-child {
+    border-bottom: none;
+}

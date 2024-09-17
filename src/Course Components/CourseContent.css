@@ -1,0 +1,135 @@
+.course-content {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.course-header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+    position: relative;
+}
+
+.course-header h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.course-header p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.course-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.course-info p {
+    margin: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    color: #444;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.course-info p span {
+    margin-left: 10px;
+}
+
+/* Icons */
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Section styles */
+.section-header {
+    background-color: #e60023; /* A more beautiful red for the section header */
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-header h2 {
+    background-color: transparent; /* Ensure no white background */
+    margin: 0; /* Remove any default margin */
+    color: inherit; /* Inherit the color from the header */
+}
+
+.section-content {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.section-content p {
+    margin: 0;
+}
+
+/* Completed Section Styles */
+.completed-section-header {
+    background-color: #28a745; /* Green background to indicate completion */
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 128, 0, 0.2);
+}
+
+.completed-section-header h2 {
+    margin: 0;
+    color: inherit;
+}
+
+.completed-section-header::before {
+    content: "✔️"; /* Checkmark icon */
+    margin-right: 10px;
+}
+
+/* Uncompleted Section Styles */
+.uncompleted-section-header {
+    background-color: #e60023; /* Red background for uncompleted */
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px dashed #b5b5b5;
+}
+
+.uncompleted-section-header h2 {
+    margin: 0;
+    color: inherit;
+}
+
+.uncompleted-section-header::before {
+    content: "⏳"; /* Hourglass icon */
+    margin-right: 10px;
+}

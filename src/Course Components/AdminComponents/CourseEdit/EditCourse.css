@@ -1,0 +1,144 @@
+/* General container styling */
+.edit-course-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Section selector styling */
+.section-selector {
+    margin-bottom: 20px;
+}
+
+.section-selector label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.section-selector select {
+    padding: 5px;
+    font-size: 1rem;
+}
+
+/* Button styling */
+button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 1rem;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Section description editor styling */
+.section-description-editor {
+    margin-bottom: 20px;
+}
+
+.section-description-editor textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.section-description-editor button {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Questions manager styling */
+.questions-manager {
+    margin-bottom: 20px;
+}
+
+.questions-manager h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.new-question {
+    margin-top: 20px;
+}
+
+.new-question h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.new-question input,
+.new-question textarea {
+    display: block;
+    width: calc(100% - 22px);
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Ensure textareas in the new question section have consistent appearance with inputs */
+.new-question textarea {
+    height: 60px; /* Set height as appropriate */
+    resize: none; /* Prevent resizing */
+}
+
+.new-question button {
+    margin-top: 10px;
+}
+
+/* Question editor styling */
+.question-editor {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.new-question {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.question-editor input,
+.question-editor textarea {
+    display: block;
+    width: calc(100% - 22px);
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Ensure textareas in the question editor have consistent appearance with inputs */
+.question-editor textarea {
+    height: 60px; /* Set height as appropriate */
+    resize: none; /* Prevent resizing */
+}
+
+.question-editor button {
+    margin-right: 10px;
+}

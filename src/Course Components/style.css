@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.course-admin-content {
+    display: flex;
+    flex-direction: column; /* Ensure the title is on top */
+    min-height: 100vh; /* Ensure the content takes at least full viewport height */
+    margin-top: 50px; /* Add margin to account for the fixed navbar height */
+}
+
+.main-dashboard {
+    display: flex; /* Make the sidebar and content side by side */
+    flex: 1; /* Take remaining space */
+}
+
+.sidebar {
+    width: 220px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    position: fixed;
+    top: 50px; /* Align sidebar to start just below the navbar */
+    left: 0; /* Align sidebar to the left margin */
+    height: calc(100% - 50px); /* Adjust height to account for the navbar */
+    overflow-y: auto; /* Add scroll if content overflows */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow for better separation */
+    border-right: 1px solid #ddd; /* Add border to differentiate from content */
+}
+
+.sidebar h2, .sidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar ul {
+    margin-top: 20px;
+}
+
+.sidebar ul li {
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.sidebar ul li:hover {
+    background-color: #ddd; /* Highlight on hover */
+}
+
+.dashboard-content {
+    margin-left: 240px; /* Margin to accommodate the fixed sidebar */
+    padding: 20px;
+    width: calc(100% - 240px); /* Adjust width to avoid overflow */
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%; /* Ensure the title is centered */
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    background-color: #f4f4f4; /* Add background color for differentiation */
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%; /* Full width */
+    text-align: center;
+}
+
+h3 {
+    font-size: 18px;
+    margin-top: 20px;
+    background-color: #f9f9f9; /* Lighter background for section titles */
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%; /* Full width */
+    text-align: center;
+}
+
+.chart-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Ensure charts take full width */
+}
+
+.chart-label {
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.chart-legend {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.legend-color {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.average-time-box {
+    margin: 20px 0; /* Add some margin to separate it from other elements */
+    padding: 15px;
+    background-color: #e0e0e0; /* Light gray background */
+    border-radius: 10px;
+    text-align: center;
+}
+
+.average-time-box h3 {
+    margin: 0 0 10px 0;
+}
+
+.average-time-box p {
+    font-size: 16px;
+    margin: 0;
+}

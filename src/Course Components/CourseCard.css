@@ -1,0 +1,80 @@
+.course-card {
+    width: 300px;
+    height: 450px; /* Fixed height for all cards */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative; /* Add this line */
+    align-items: center; /* Center content horizontally */
+}
+
+.course-card img {
+    width: 200px; /* Set width to 200px */
+    height: 182px; /* Set height to 182px */
+    object-fit: cover; /* Ensure the image covers the specified dimensions */
+    display: block;
+    margin: 0 auto;
+}
+
+.course-card h2 {
+    font-size: 1.5em;
+    margin: 15px 0;
+    text-align: center; /* Ensure the text is centered horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px; /* Adjust the height as needed to center vertically */
+}
+
+.enroll-button {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 15px 0;
+    transition: background-color 0.3s ease;
+}
+
+.enroll-button:hover {
+    background-color: darkgreen;
+}
+
+.enroll-button:disabled {
+    background-color: lightgray;
+    cursor: not-allowed;
+}
+
+.course-details {
+    flex-grow: 1;
+    overflow-y: auto;
+    text-align: left;
+}
+
+.course-details p {
+    margin: 10px 0;
+}
+
+/* Add this new CSS for the checkmark */
+.checkmark {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: green;
+    color: white;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
